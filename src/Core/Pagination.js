@@ -75,7 +75,7 @@ class Paginator extends EventEmitter {
 			li.append(a);
 			ul.append(li);
 
-			a.addEventListener('click', e => {
+			li.addEventListener('click', e => {
 				e.preventDefault();
 				this.emit('move', i);
 			});

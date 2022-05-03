@@ -1,0 +1,48 @@
+* {
+	padding: 0px;
+	box-sizing: border-box;
+	margin: 0;
+}
+ol,
+li{
+	list-style: none;
+}
+
+body {
+	background: #333;
+	color: rgb(229, 226, 226);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content:center;align-items: center;
+}
+
+.new-user {
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+}
+
+.new-user__block {
+	margin-bottom: 20px;
+}
+
+.new-user__block:last-child {
+	margin-bottom: 0;
+}
+
+.submit {
+	width: 140px;
+	height: 60px;
+	background: rgba(2, 173, 79, 0.8);
+	transition: all 0.3s ease 0s;
+	border: none;
+	border-radius: 5px;
+}
+
+.submit:hover {
+	background: rgba(2, 173, 79, 1);
+}

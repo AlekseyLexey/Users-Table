@@ -84,6 +84,10 @@ table.table tbody tr td {
 	text-align: center;
 }
 
+.pagination {
+	margin-bottom: 40px;
+}
+
 .pagination nav ul.pagination{
 	max-width: 1000px;
 	margin: 0 auto;
@@ -95,4 +99,23 @@ table.table tbody tr td {
 ul.pagination a.pagination__link {
 	color: rgb(229, 226, 226);
 	text-decoration: none;
+}
+
+ul.pagination li {
+	border: 1px outset rgba(211, 220, 50, 0);
+	border-radius: 3px;
+	min-height: 25px;
+	min-width: 25px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	cursor: pointer;
+}
+
+ul.pagination .active {
+	border: 1px outset rgba(211, 220, 50, .8);
+}
+
+.disabled {
+	pointer-events: none;
 }

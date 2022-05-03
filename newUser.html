@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="user-style.css">
+	<title>New User add</title>
+</head>
+<body>
+	
+	<div class="new-user">
+		<div class="new-user__block">
+			<label for="username">User Name:</label>
+			<input id="username" type="text" class="user-input" name="userName" value="" data-field="userName">
+		</div>
+		<div class="new-user__block">
+			<label for="userage">User Age:</label>
+			<input id="userage" type="number" class="user-input" name="userAge" value="" data-field="userAge">
+		</div>
+		<div class="new-user__block">
+			<label for="usercount">Count:</label>
+			<input id="usercount" type="number" class="user-input" name="count" value="" data-field="count">
+		</div>
+
+		<button class="submit" data-action="addUser" type="submit">Add User</button>
+	</div>
+
+	<script src="src/indexsScripts/newUser.js" type="module"></script>
+</body>
+</html>
