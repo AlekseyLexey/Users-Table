@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lesson 15-06</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<header class="header">
+			<ul class="header__list">
+				<li>
+					<div class="header__items">
+						<div class="header__item">
+							<p>New User+</p>
+						</div>
+						<div class="header__item">
+							<p>Reset</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<h1>Table of Users</h1>
+				</li>
+				<li>
+					<input type="text" name="form[]" data-value="" class="header__input">
+				</li>
+			</ul>
+		</header>
+
+		<template data-template="usersTable">
+			<div class="wrapper-table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>id</th>
+							<th>Имя</th>
+							<th>Возраст</th>
+							<th>Счет</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</template>
+
+		<template data-row="userRow">
+			<tr>
+				<td data-field="id">0</td>
+				<td data-field="name">Имя</td>
+				<td data-field="age">0</td>
+				<td data-field="check">0</td>
+				<td data-field="action">
+					<button class="btn btn-user">Редактировать</button>
+				</td>
+			</tr>
+		</template>
+
+		<div class="users-table" data-mount="ordersTable"></div>
+
+		<div class="pagination" data-mount="pagination"></div>
+
+		<script src="src/script.js" type="module"></script>
+	</body>
+</html>

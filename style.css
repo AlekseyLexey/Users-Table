@@ -1,0 +1,98 @@
+* {
+	padding: 0px;
+	box-sizing: border-box;
+	margin: 0;
+}
+ol,
+li{
+	list-style: none;
+}
+
+body {
+	background: #333;
+	color: rgb(229, 226, 226);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.header {
+	padding-top: 50px;
+	max-width: 1400px;
+	margin: 0 auto 50px;
+}
+
+.header ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__list {
+	display: flex;
+}
+
+.header__items {
+	flex: 0 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__item {
+	flex: 1 0 200px;
+	text-align: center;
+}
+
+.header__item p {
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.header__item p:hover {
+	color: rgb(167, 243, 144);
+}
+
+table.table {
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+table.table thead tr {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+table.table thead tr th {
+	flex: 0 1 320px;
+	text-align: center;
+}
+
+table.table tbody tr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+table.table tbody tr td {
+	flex: 0 1 100%;
+	text-align: center;
+}
+
+.pagination nav ul.pagination{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+ul.pagination a.pagination__link {
+	color: rgb(229, 226, 226);
+	text-decoration: none;
+}
