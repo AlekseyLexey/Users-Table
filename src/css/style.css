@@ -1,20 +1,3 @@
-* {
-	padding: 0px;
-	box-sizing: border-box;
-	margin: 0;
-}
-ol,
-li{
-	list-style: none;
-}
-
-body {
-	background: #333;
-	color: rgb(229, 226, 226);
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 18px;
-}
-
 .header {
 	padding-top: 50px;
 	max-width: 1400px;
@@ -68,7 +51,7 @@ table.table thead tr {
 }
 
 table.table thead tr th {
-	flex: 0 1 320px;
+	flex: 0 1 25%;
 	text-align: center;
 }
 
@@ -80,7 +63,7 @@ table.table tbody tr {
 }
 
 table.table tbody tr td {
-	flex: 0 1 100%;
+	flex: 0 1 25%;
 	text-align: center;
 }
 

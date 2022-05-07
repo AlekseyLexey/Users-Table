@@ -4,6 +4,11 @@ const nameInp = document.querySelector('[data-field="userName"]');
 const ageInp = document.querySelector('[data-field="userAge"]');
 const countInp = document.querySelector('[data-field="count"]');
 const submitBtn = document.querySelector('[data-action="addUser"]');
+const close = document.querySelector('.close');
+
+close.addEventListener('click', (e) => {
+	location = 'index.html';
+});
 
 const data = {
 	name: null,

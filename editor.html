@@ -4,12 +4,37 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="editor-style.css">
+	<link rel="stylesheet" href="src/css/null.css">
+	<link rel="stylesheet" href="src/css/general.css">
+	<link rel="stylesheet" href="src/css/editor-style.css">
 	<title>Editor</title>
 </head>
 <body>
 
-	
+	<div class="editor">
+		<div class="editor__content">
+			<div class="editor__row">
+				<label for="userId">ID:</label>
+				<input id="userId" type="number" data-field="userId" name="id" class="editor__input" value="" disabled="true">
+			</div>
+			<div class="editor__row">
+				<label for="userName">User Name:</label>
+				<input id="userName" type="text" name="name" data-field="userName" class="editor__input" value="">
+			</div>
+			<div class="editor__row">
+				<label for="userAge">User Age:</label>
+				<input id="userAge" type="number" name="age" data-field="userAge" class="editor__input" value="">
+			</div>
+			<div class="editor__row">
+				<label for="userCount">User Count:</label>
+				<input id="userCount" type="number" name="counter" data-field="userCount" class="editor__input" value="">
+			</div>
+		</div>
+
+		<button type="submit" class="submit">Confirm</button>
+
+	</div>
+
 	
 
 	<script src="src/indexsScripts/editor.js"></script>

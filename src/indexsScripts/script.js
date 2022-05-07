@@ -19,7 +19,7 @@ const ut = new UsersTable(
   JSON.parse(localStorage.getItem('__users__')).slice(0, 100)
 );
 
-ut.on('edit', (userId) => location = `/editor.html?orderId=${userId}`);
+ut.on('edit', (userId) => location = `/editor.html?userId=${userId}`);
 
 const pagination = new Paginator(
   document.querySelector('[data-mount="pagination"]'),

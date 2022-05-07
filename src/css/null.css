@@ -1,0 +1,16 @@
+* {
+	padding: 0px;
+	box-sizing: border-box;
+	margin: 0;
+}
+ol,
+li{
+	list-style: none;
+}
+
+body {
+	background: #333;
+	color: rgb(229, 226, 226);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+}
