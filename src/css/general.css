@@ -7,3 +7,24 @@
 	border-radius: 5px;
 	cursor: pointer;
 }
+
+.input__row {
+	flex: 0 1 40px;
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.input__element {
+	padding-left: 10px;
+}
+
+.close {
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	font-size: 30px;
+	transform: translate(-150%, 50%);
+}

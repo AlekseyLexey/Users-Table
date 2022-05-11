@@ -12,21 +12,28 @@
 
 		<header class="header">
 			<ul class="header__list">
-				<li>
-					<div class="header__items">
-						<div class="header__item" data-field="newUser">
+				<li class="header__item header__item_big item-header">
+					<div class="item-header__content">
+						<div class="item-header__item" data-field="newUser">
 							<p>New User+</p>
 						</div>
-						<div class="header__item" data-field="reset">
+						<div class="item-header__item" data-field="reset">
 							<p>Reset</p>
 						</div>
 					</div>
+
+					<h1 class="item-header__content">Table of Users</h1>
 				</li>
-				<li>
-					<h1>Table of Users</h1>
-				</li>
-				<li>
-					<input type="text" name="form[]" data-value="" class="header__input">
+
+				<li class="header__item item-header">
+					<div class="input__row">
+						<label for="userName">User Name:</label>
+						<input id="userName" type="text" name="userName" data-field="userName" class="input__element" value="">
+					</div>
+					<div class="input__row">
+						<label for="userAge">User Age:</label>
+						<input id="userAge" type="number" name="userAge" data-field="userAge" class="input__element" value="">
+					</div>
 				</li>
 			</ul>
 		</header>

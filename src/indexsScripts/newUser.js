@@ -32,7 +32,7 @@ countInp.addEventListener('input', (e) => {
 	data.counter = isNull(e.target.value) ? e.target.value : null;
 });
 
-submitBtn.addEventListener('click', (e) => {
+submitBtn.addEventListener('click', async (e) => {
 	let flag = true;
 
 	for (const item of Object.values(data)) {
@@ -43,7 +43,7 @@ submitBtn.addEventListener('click', (e) => {
 	}
 
 	if (flag) {
-		createUser(data);
+		await createUser(data);
 		e.target.style.backgroundColor = 'blue';
 		setTimeout(() => {
 			location = `/index.html`;
