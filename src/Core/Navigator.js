@@ -1,6 +1,6 @@
-import Observer from "./Observer.js";
+import Observable from "./Observable.js";
 
-class Navigator extends Observer{
+class Navigator extends Observable{
 	_data = {};
 
 	constructor(handler) {

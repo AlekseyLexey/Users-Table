@@ -16,8 +16,17 @@
 	margin-bottom: 10px;
 }
 
+.input__row_mini {
+	width: 190px;
+}
+
 .input__element {
 	padding-left: 10px;
+}
+
+.input__element_mini {
+	margin-left: 10px;
+	width: 120px;
 }
 
 .close {

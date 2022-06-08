@@ -7,6 +7,7 @@
 		<title>Users Table</title>
 		<link rel="stylesheet" href="src/css/null.css">
 		<link rel="stylesheet" href="src/css/style.css"/>
+		<link rel="stylesheet" href="src/css/general.css">
 	</head>
 	<body>
 
@@ -26,13 +27,17 @@
 				</li>
 
 				<li class="header__item item-header">
-					<div class="input__row">
-						<label for="userName">User Name:</label>
-						<input id="userName" type="text" name="userName" data-field="userName" class="input__element" value="">
+					<div class="input__row input__row_mini">
+						<label for="userId">User ID:</label>
+						<input id="userId" type="number" name="userId" data-field="userId" class="input__element input__element_mini" value="">
 					</div>
-					<div class="input__row">
+					<div class="input__row input__row_mini">
+						<label for="userName">User Name:</label>
+						<input id="userName" type="text" name="userName" data-field="userName" class="input__element input__element_mini" value="">
+					</div>
+					<div class="input__row input__row_mini">
 						<label for="userAge">User Age:</label>
-						<input id="userAge" type="number" name="userAge" data-field="userAge" class="input__element" value="">
+						<input id="userAge" type="number" name="userAge" data-field="userAge" class="input__element input__element_mini" value="">
 					</div>
 				</li>
 			</ul>

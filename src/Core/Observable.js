@@ -1,4 +1,4 @@
-class Observer {
+class Observable {
 	subscribers = new Map();
 
 	subscribe(subscriber) {
@@ -22,4 +22,4 @@ class Observer {
 	}
 }
 
-export default Observer;
+export default Observable;

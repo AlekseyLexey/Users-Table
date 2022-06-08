@@ -25,7 +25,7 @@ nameInp.addEventListener('input', (e) => {
 });
 
 ageInp.addEventListener('input', (e) => {
-	data.age = isNull(e.target.value) ? e.target.value : null;
+	data.age = isNull(e.target.value) ? +e.target.value : null;
 });
 
 countInp.addEventListener('input', (e) => {
